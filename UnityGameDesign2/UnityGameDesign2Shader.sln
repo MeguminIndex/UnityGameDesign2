@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameDesign2Shader.Plugins", "UnityGameDesign2Shader.Plugins.csproj", "{26E295B2-07E2-55C2-4D75-7AC56867F984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameDesign2Shader", "UnityGameDesign2Shader.csproj", "{512753C1-1139-F99D-4C6B-265E583D8ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameDesign2Shader.Editor.Plugins", "UnityGameDesign2Shader.Editor.Plugins.csproj", "{0F5240A6-A9C6-CE79-52C4-77C0E3A1D42E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E295B2-07E2-55C2-4D75-7AC56867F984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E295B2-07E2-55C2-4D75-7AC56867F984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E295B2-07E2-55C2-4D75-7AC56867F984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E295B2-07E2-55C2-4D75-7AC56867F984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512753C1-1139-F99D-4C6B-265E583D8ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512753C1-1139-F99D-4C6B-265E583D8ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512753C1-1139-F99D-4C6B-265E583D8ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512753C1-1139-F99D-4C6B-265E583D8ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5240A6-A9C6-CE79-52C4-77C0E3A1D42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5240A6-A9C6-CE79-52C4-77C0E3A1D42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5240A6-A9C6-CE79-52C4-77C0E3A1D42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5240A6-A9C6-CE79-52C4-77C0E3A1D42E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
