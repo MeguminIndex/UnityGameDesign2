@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour {
 
 
 //	public PointsManager pm;
-    public GameWorld gameWorld;
+     GameWorld gameWorld;
 	public string playerName;
 	//public float playerScore = 0;
     public float movementSpeed;
@@ -20,26 +20,53 @@ public class PlayerScript : MonoBehaviour {
     private Rigidbody2D rb;
     bool jumpKeyDown;
 	bool isOnFloor;
-    // Use this for initialization
+
+	public Text playerLable;
+
+	public Transform topLablePos;
+	public Transform bottomLablePos;
+
+	// Use this for initialization
     void Start () {
         maxSpeedNegative = 0 - maxSpeed;
         rb = GetComponent<Rigidbody2D>();
         jumpKeyDown = false;
       //	pm = GameObject.FindGameObjectWithTag("PointsControll").GetComponent<PointsManager>();
         gameWorld = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameWorld>();
+
+
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        //should put input checking inhere 
+		//should put input checking inhere 
 
+
+		if (gameWorld.backwards == false)
+		{
+			playerLable.transform.position = topLablePos.position;
+			playerLable.text = "P" + (ID+1).ToString();
+
+
+		}
+		else
+		{
+			playerLable.transform.position = bottomLablePos.position;
+			int id = gameWorld.PlayerScoreObj.Length - ID;
+			playerLable.text = "P" + id.ToString();
+		}
 
         if (Input.GetButtonDown(verticalControlAxis) == true && isOnFloor == true)
         {
             jumpKeyDown = true;
         }
 
-    }
+
+		//rb.velocity = Vector3.zero;
+		//rb.angularVelocity = 0;
+
+	}
 
     
 

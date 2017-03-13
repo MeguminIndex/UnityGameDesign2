@@ -61,7 +61,7 @@ public class GameWorld : MonoBehaviour {
 
                 for (int i = 0; i < size; i++)
             {
-                int id = 4 - i;
+                int id = PlayerScoreObj.Length - i;
                 float tempRevScore = 0 - score[i];
                 playerScoreText[i].text = "Player " + id + ": " + tempRevScore;
             }
