@@ -82,12 +82,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameWorld.cs" />
+    <Compile Include="Assets\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Scripts\ImgEffectBase.cs" />
     <Compile Include="Assets\Scripts\InvertColour.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\PointsManager.cs" />
+    <Compile Include="Assets\Scripts\VortexEdited.cs" />
     <Compile Include="Assets\Scripts\spawnPoint.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Shaders\VortexEffect.shader" />
     <None Include="Assets\Shaders\invertColour.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
@@ -129,7 +133,6 @@
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />

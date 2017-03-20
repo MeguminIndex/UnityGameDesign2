@@ -130,13 +130,13 @@ public class PlayerScript : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 
-		Debug.Log("OnTriggerEnter2D called");
+	//	Debug.Log("OnTriggerEnter2D called");
 
 		if (collision.gameObject.tag == "Score")
 		{
             //playerScore += 1;
             gameWorld.score[ID] += 1;
-            Debug.Log(gameWorld.score);
+        //    Debug.Log(gameWorld.score);
 
 			//destory point
 			Destroy(collision.gameObject);
@@ -157,13 +157,13 @@ public class PlayerScript : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D collision)//called when two object collide
 	{
-		Debug.Log("Entered collision with object");
+	//	Debug.Log("Entered collision with object");
 		//replace with raycasting later?
 
 		//checks if object is tagged floor if so sets isOnFloor to true
 		if (collision.gameObject.tag == "Floor")
 		{
-			Debug.Log("Collided object is tagged with Floor");
+		//	Debug.Log("Collided object is tagged with Floor");
 
 			isOnFloor = true;
 		}
