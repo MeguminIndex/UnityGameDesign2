@@ -11,6 +11,9 @@ public class GameWorld : MonoBehaviour {
     public GameObject[] PlayerScoreObj;//stores the game objects which contain the score text
     public GameObject[] PlayerObjects;//stores the player objects used to easily refrence there colliders
     Text[] playerScoreText;//the score texts for all players
+
+    public Text winText;
+
     public float[] score;
 
     Text switchSplash;
@@ -72,14 +75,22 @@ public class GameWorld : MonoBehaviour {
           
 
                 for (int i = 0; i < size; i++)
-            {
+                {
                 int id = PlayerScoreObj.Length - i;
                 float tempRevScore = 0 - score[i];
                 playerScoreText[i].text = "Player " + id + ": " + tempRevScore;
+                }
+        }
+
+        for(int i=0; i<size; i++)
+        {
+            if(score[i] >= 10)
+            {
+                winText.text = "Player " + (i + 1).ToString() + " Win's";
             }
         }
 
-    
+        
 
         if(Input.GetKeyDown(KeyCode.F1))
         {

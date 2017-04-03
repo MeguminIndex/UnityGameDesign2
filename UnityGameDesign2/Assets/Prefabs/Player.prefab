@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: P1
   movementSpeed: 15
-  maxSpeed: 3
+  maxSpeed: 5
   jumpForce: 6
   verticalControlAxis: Vertical
   HorizontalControlAxis: Horizontal
